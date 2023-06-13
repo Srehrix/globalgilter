@@ -86,7 +86,7 @@ DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 #url links
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'powerlinkz.in')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'add183b460960c489ed7a103936393769d8791d2')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 
 #Auto approve 
 #In private group or channel must enable request admin approval 
