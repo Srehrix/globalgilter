@@ -198,7 +198,12 @@ async def next_page(bot, query):
             InlineKeyboardButton(f' ♀️ {search} ♀️ ', 'qinfo')
         ]
     )
-    btn.insert(1, 
+     btn.insert(1, 
+        [
+            InlineKeyboardButton(f'𝐇𝐎𝐖 𝐓𝐎 𝐆𝐄𝐓 𝐌𝐎𝐕𝐈𝐄𝐒',url='https://t.me/Tiyaan_bots/8')
+        ]
+    )
+    btn.insert(2, 
          [
              InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
              InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
@@ -1239,7 +1244,12 @@ async def auto_filter(client, msg, spoll=False):
             InlineKeyboardButton(f' ♀️ {search} ♀️ ', 'qinfo')
         ]
     )
-    btn.insert(1, 
+     btn.insert(1, 
+        [
+            InlineKeyboardButton(f'𝐇𝐎𝐖 𝐓𝐎 𝐆𝐄𝐓 𝐌𝐎𝐕𝐈𝐄𝐒',url='https://t.me/Tiyaan_bots/8')
+        ]
+    )
+    btn.insert(2, 
          [
              InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
              InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
