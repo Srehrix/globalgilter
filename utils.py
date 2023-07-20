@@ -439,7 +439,7 @@ async def get_shortlink(chat_id, link):
         https = "https"
         link = link.replace("http", https)
     url = f'https://dalink.in/api'
-    params = {'api': SHORTENER_API,
+    params = {'api': SHORTLINK_API,
               'url': link,
               }
 
@@ -451,8 +451,8 @@ async def get_shortlink(chat_id, link):
                     return data['shortenedUrl']
                 else:
                     logger.error(f"Error: {data['message']}")
-                    return f'https://dalink.in/api?api={SHORTENER_API}&link={link}'
+                    return f'https://dalink.in/api?api={SHORTLINK_API}&link={link}'
 
     except Exception as e:
         logger.error(e)
-        return f'https://dalink.in/api?api={SHORTENER_API}&link={link}'
+        return f'https://dalink.in/api?api={SHORTLINK_API}&link={link}'
