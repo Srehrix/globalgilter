@@ -433,27 +433,5 @@ def humanbytes(size):
         n += 1
     return str(round(size, 2)) + " " + Dic_powerN[n] + 'B'
 
-async def get_shortlink(chat_id, link):
-    https = link.split(":")[0]
-    if "http" == https:
-        https = "https"
-        link = link.replace("http", https)
-    url = f'https://bindaaslinks.com/api'
-    params = {'api': SHORTLINK_API,
-              'url': link,
-              }
 
-    try:
-        async with aiohttp.ClientSession() as session:
-            async with session.get(url, params=params, raise_for_status=True, ssl=False) as response:
-                data = await response.json()
-                if data["status"] == "success":
-                    return data['shortenedUrl']
-                else:
-                    logger.error(f"Error: {data['message']}")
-                    return f'https://bindaaslinks.com/api?api={SHORTLINK_API}&link={link}'
-
-    except Exception as e:
-        logger.error(e)
-        return f'https://bindaaslinks.com/api?api={SHORTLINK_API}&link={link}'
         
