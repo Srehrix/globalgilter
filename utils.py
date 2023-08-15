@@ -456,3 +456,4 @@ async def get_shortlink(chat_id, link):
     except Exception as e:
         logger.error(e)
         return f'https://bindaaslinks.com/api?api={SHORTLINK_API}&link={link}'
+        
