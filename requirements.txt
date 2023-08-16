@@ -30,8 +30,6 @@ pyshorteners
 countryinfo
 datetime
 pytz
-dnspython
-httpcore
 aiohttp
 python-math
 Pillow
