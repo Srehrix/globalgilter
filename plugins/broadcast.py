@@ -41,7 +41,7 @@ async def verupikkals(bot, message):
     await sts.edit(f"Broadcast Completed:\nCompleted in {time_taken} seconds.\n\nTotal Users {total_users}\nCompleted: {done} / {total_users}\nSuccess: {success}\nBlocked: {blocked}\nDeleted: {deleted}")
 
 
-@Client.on_message(filters.command(["grp_broadcast", "pin_grp_broadcast"}) & filters.user(ADMINS) & filters.reply)
+@Client.on_message(filters.command(["grp_broadcast", "pin_grp_broadcast"]) & filters.user(ADMINS) & filters.reply)
 async def grp_brodcst(bot, message):
     if message.command[0] == 'pin_grp_broadcast':
         pin = True
