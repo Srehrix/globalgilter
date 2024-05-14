@@ -297,7 +297,7 @@ Elsa
     CUSTOM_FILE_CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_caption}
 
 ╔════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗
-▫️<a href=https://t.me/CinemaCompanyOffiz> ᴄʜᴀɴɴᴇʟ </a>
+▫️<a href=https://t.me/CinemaCompanyUpdates> ᴄʜᴀɴɴᴇʟ </a>
 ▫️<a href=https://t.me/CinemaCompanyDiscussion> sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ </a>
 ╚════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝</b>"""
 
